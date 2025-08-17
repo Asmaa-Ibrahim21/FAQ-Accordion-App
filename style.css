@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     background-color: var(--background-color);
+}
+:root{
+    --background-color:#eff6ff;
+    --dark-blue:#3b82f6;
+    --dark-gray:#111827;
+}
+
+.container{
+   background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 800px;
+    margin: 40px auto;
+    padding: 3rem 2rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0,0.2);
+   
+
+
+}
+.container h1{
+    color: var(--dark-blue);
+    font-size: 40px;
+    margin-bottom:30px;
+    
+}
+.container .question-header{
+    display: flex;
+    justify-content: space-between;
+  padding: 15px ;
+
+}
+.container .question-item{
+    box-shadow: 1px 1px 5px rgb(0, 0, 0,0.2);
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px;
+
+}
+.container .question-item .question-header h2{
+    color: var(--dark-blue);
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 22px;
+}
+.container .question-item  .question-header .btn{
+    border: none;
+    width: 25px;
+    height: 25px;
+   background-color: var(--dark-blue);
+   color: #fff; 
+   font-size: 20px;
+   cursor: pointer;
+  border-radius: 50%;
+}
+
+.container .question-item  .question-content{
+    background-color: #dbeafe;
+    display: none;
+    line-height: 1.6;
+    font-size: 16px;
+    color: var(--dark-gray);
+    padding: 15px;
+}
+.container .question-item  .question-content.active{
+    display: block;}
